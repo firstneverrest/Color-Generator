@@ -1,9 +1,73 @@
 .colors {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .SingleColor {
     width: 25rem;
     height: 18rem;
+    padding: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+        width: 25rem;
+        height: 15rem;
+    }
+
+    @media only screen and (max-width: 26.25em) {
+        width: 22rem;
+        height: 15rem;
+    }
+
+    @media only screen and (max-width: 23.125em) {
+        width: 19rem;
+        height: 15rem;
+    }
+
+    & p {
+        &:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+    }
+
 }
+
+.CopyPopup {
+    position: absolute;
+    color: $color-black;
+    background-color: $color-white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 5rem;
+    padding: 1.5rem 2.5rem;
+
+    @include absCenter;
+    top: 0%;
+    display: flex;
+
+    &__text {
+        margin-top: .5rem;
+    }
+
+    &__checkmark {
+        color: $color-secondary;
+        width: 3rem;
+        height: 3rem;
+        margin-right: .5rem;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: .6rem;
+        height: 100%;
+        background-color: $color-secondary;
+    }
+
+}
+
+.color-light {
+    color: $color-white;
+}
+

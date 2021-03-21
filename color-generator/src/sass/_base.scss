@@ -31,7 +31,6 @@ html {
 
 body {
     box-sizing: border-box;
-    background-color: $color-white;
 }
 
 // scrollbar
@@ -42,12 +41,12 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: $color-primary; 
+    background: $color-white; 
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: $color-white; 
+    background: #888; 
     border-radius: 15px;
 }
 

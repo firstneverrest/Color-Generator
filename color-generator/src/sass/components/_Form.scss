@@ -1,0 +1,46 @@
+.Form {
+    margin: 3rem;
+
+    &__input {
+        padding: 1rem;
+        margin-right: 2rem;
+        border: 2px solid $color-primary;
+        border-radius: 4px;
+        outline: none;
+
+        @media only screen and (max-width: $bp-smallest) {
+            width: 20rem;
+            height: 4.5rem;
+            font-size: 1.5rem;
+        }
+
+        &:focus,
+        &:active {
+            border: 2px solid #00c8ff;
+        }
+    }
+
+    &__button {
+        padding: .8rem 2rem;
+        outline: none;
+        font-family: inherit;
+        font-size: 1.6rem;
+        background-color: $color-primary;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 8px 20px -6px rgba(black, .3);
+        cursor: pointer;
+        transform: translateY(1px);
+        transition: all .3s;
+
+        
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+}

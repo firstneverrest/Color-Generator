@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+
+    @media only screen and (max-width: $bp-smallest) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.title {
+    align-self: center;
+    margin-left: 3rem;
+    font-size: 3rem;
+    color: $color-primary;
+
+    position: relative;
+
+    @media only screen and (max-width: $bp-smallest) {
+       margin-top: 3rem;
+    }
+
+    &::after {
+        content: "";
+        width: 50%;
+        height: 3px;
+        background-color: $color-primary;
+        color: $color-primary;
+        position: absolute;
+        bottom: -10%;
+        left: 28%;
+    }
+}
