@@ -3,6 +3,7 @@
 Color Generator web application generate different 20 tints of color that you want using values.js library.
 Each blocks of color will display weight percentage, hex color and rgb color. 
 In addition, you can copy color that you want from the generator by just clicking that block of color.
+This is also my first project using firebase for hosting web app.
 
 **Demo:** [Color-Generator](https://my-first-hosting-97075.firebaseapp.com/) 
 
@@ -12,6 +13,7 @@ In addition, you can copy color that you want from the generator by just clickin
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![image](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 ![image](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![image](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=white)
 
 ### React
 - functional component
