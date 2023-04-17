@@ -13,13 +13,9 @@ function App() {
   // Identify the user
   hotjar.identify('USER_ID', { userProperty: 'value' })
 
-  // Add an event
-  hotjar.event('button-click')
-
   // Update SPA state
   hotjar.stateChange('/')
   hotjar.stateChange('/about')
-  hotjar.stateChange('/article')
 
   // Check if Hotjar has been initialized before calling its methods
   if (hotjar.initialized()) {
